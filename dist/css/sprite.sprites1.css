@@ -1,0 +1,38 @@
+.icon-1 {
+  background-image: url(../images/sprites/sprite.sprites1.png);
+  background-position: 0px 0px;
+  width: 41px;
+  height: 41px;
+  /*float: right;*/
+  position: absolute;
+  margin-top: 85px;
+  margin-left: 85px;
+}
+.icon-2 {
+  background-image: url(../images/sprites/sprite.sprites1.png);
+  background-position: -42px 0px;
+  width: 41px;
+  height: 41px;
+   position: absolute;
+  margin-top: 85px;
+  margin-left: 85px;
+}
+.icon-3 {
+
+  background-image: url(../images/sprites/sprite.sprites1.png);
+  background-position: -42px -42px;
+  width: 41px;
+  height: 40px;
+   position: absolute;
+  margin-top: 85px;
+  margin-left: 85px;
+}
+.icon-4 {
+  background-image: url(../images/sprites/sprite.sprites1.png);
+  background-position: 0px -42px;
+  width: 41px;
+  height: 41px;
+   position: absolute;
+  margin-top: 85px;
+  margin-left: 85px;
+}
