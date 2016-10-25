@@ -56,8 +56,8 @@ function createImages( data ) {
     var text = document.querySelectorAll(".text");
 
     for ( var i = 0; i < 7; i++ ) {
-        items[i].setAttribute( 'src', data.images[i].imageurl );
-        text[i].innerHTML = data.images[i].word;
+        items[i].setAttribute( 'src', data.hits[i].previewURL );
+//         text[i].innerHTML = data.images[i].word;
     }
 }
 
