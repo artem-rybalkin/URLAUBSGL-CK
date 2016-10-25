@@ -13,7 +13,7 @@ var zapros ;
 
 function request( zapros ){
     
-  var url = 'http://api.pixplorer.co.uk/image?word='+zapros+'&amount=7&size=tb';
+  var url = 'https://pixabay.com/api/?key=3168519-28357a1b07f864f5473734c78&q='+value;
 //for IE8
     if (window.XMLHttpRequest) {
         xhr = new XMLHttpRequest();
