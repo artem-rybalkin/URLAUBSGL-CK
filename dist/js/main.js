@@ -8,7 +8,7 @@ var msnry = new Masonry( grid, {
   percentPosition: true
 });
 
-var zapros ;
+var zapros = 'cat' ;
 
 
 function request( zapros ){
