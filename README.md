@@ -8,3 +8,4 @@
 Применён подход gracefull degradation, mobile first.
 
 [Макет](https://github.com/goit-fe/markup_fe2o/tree/master/js_final_exam/design)
+ https://artem-rybalkin.github.io/URLAUBSGLUCK/
