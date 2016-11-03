@@ -38,10 +38,10 @@ function request( zapros ){
 
 //search
 function search() {
-    var zapros = document.getElementById('field1').value;
+    var zapros = document.getElementById('field_search').value;
     request( zapros );
    
-    document.getElementById('field1').value = "";
+    document.getElementById('field_search').value = "";
 
 }
 
@@ -52,13 +52,25 @@ document.getElementById("form-inline").onsubmit=
  }
 
 function createImages( data ) {
-    var items = document.querySelectorAll(".grid-item-img");
+    var items = $('.grid-item');
     var text = document.querySelectorAll(".text");
-
-    for ( var i = 0; i < 7; i++ ) {
-        items[i].setAttribute( 'src', data.hits[i].previewURL );
-//         text[i].innerHTML = data.images[i].word;
-    }
+    $('.grid-item').each(function(i){
+      this.style.background = 'url('+data.hits[i].previewURL+')  center no-repeat';
+      this.style.backgroundSize = 'cover';
+    });
+//     for ( var i = 0; i < 7; i++ ) {
+//         items[i].css( {'background-image': 'url('+data.hits[i].previewURL+')'} );
+// //         text[i].innerHTML = data.images[i].word;
+//     }
 }
 
 request(zapros);
+
+
+var $page = $('html, body');
+  $('a[href*="#"]').click(function() { //при нажатии на ссылку с #
+      $page.animate({
+          scrollTop: $($.attr(this, 'href')).offset().top // идёт плавная прокрутка
+      }, 400);
+      return false;
+  });
